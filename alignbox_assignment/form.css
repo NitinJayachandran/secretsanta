@@ -1,0 +1,208 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; 
+}
+
+.title-bar {
+    display: flex;
+    font-family:monospace;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10%
+}
+
+.progress-container {
+    width: 100%;
+    position: absolute;
+    top: 100px; /* Adjust as needed */
+    background-color: lightgrey;
+}
+
+.progress-bar{
+    height: 10px;
+    background-color: grey;
+    width: 100px;
+}
+
+.container {
+    max-width: 700px; 
+    padding: 20px; 
+    border-radius: 20px;
+    background-color: #ffffff; 
+    margin-top: 300px; 
+    margin-bottom: 50px; 
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.container .content {
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container h2,
+.container p {
+    text-align: center;
+}
+
+.container .click-link {
+    text-align: left;
+}
+
+.container .infoText {
+    text-align: left;
+}
+
+.container h3 {
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.input-box {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button {
+    width: 500px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: grey;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+    .addbutton{
+        background-color: transparent; /* Make background transparent */
+        border: none; /* Remove border */
+        box-shadow: none; /* Remove box shadow */
+        color: black; /* Set text color */
+        cursor: pointer;
+        outline: none; /* Remove outline */
+        margin-bottom: 10px;
+    }
+
+.button:hover {
+    background-color: grey;
+}
+
+#addMoreNames {
+    margin-top: 10px;
+}
+
+#infoText {
+    font-size: 7px;
+    margin-top: 20px;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style for unchecked radio button */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 2px solid grey; /* Border color for unchecked state */
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    border-color: grey; /* Border color for checked state */
+    background-color: grey; /* Background color for checked state */
+}
+
+.rating-container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute items evenly */
+    background-color: grey;
+    color: white;
+    margin-top: 100px;
+    position: absolute; /* Position the rating-container relative to its closest positioned ancestor */
+    top: calc(100% + 20px); /* Position it below the container and add spacing */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Make it span the full width */
+    height: 100px;
+}
+
+.rating-item {
+    flex: 1; /* Distribute the space evenly among items */
+    height: 50px; /* Adjust height as needed */
+    text-align: center;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+
+
+.separator {
+    width: 1px; /* Adjust width as needed */
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: white;
+}
+
+
+.socials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    position: absolute; /* Position the rating-container relative to its closest positioned ancestor */
+    top: calc(100% + 220px); 
+       
+}
+
+
+.social-links {
+    display: flex;
+}
+
+.social-links > div {
+    margin: 0 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    position: absolute; /* Position the rating-container relative to its closest positioned ancestor */
+    top: calc(100% + 400px); 
+}
+

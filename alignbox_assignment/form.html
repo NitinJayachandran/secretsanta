@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Santa</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<div class="title-bar">elfster</div>
+<div class="progress-container">
+    <div class="progress-bar"></div>
+</div>
+<div class="container">
+<div class="content">
+  <div>  
+    <h2>Start Your Secret Santa</h2>
+  </div>
+  <div>  
+    <p>Organize your Elfster exchange lickety-split. You'll be done in less than two minutes. Then get ready to exchange gifts! Already did this last year? Use your previous exchanges.</p>
+  </div>
+  
+  <h3>Enter Names</h3>
+  <input type="text" class="input-box" placeholder="Your Name" id="organizerName">
+  <br>
+  <br>
+  
+  <label><input type="radio" name="role" value="participant" id="participantRole"> I'm organizing and participating</label><br>
+  <br>
+  <label><input type="radio" name="role" value="organizer" id="organizerRole"> I'm just organizing</label><br>
+  
+  <h4>Add Your Friends</h4>
+  <p class = "click-link">Got a big group? <a href="#">Click here</a>.</p>
+
+
+  <div id="friendInputs">
+    <input type="text" class="input-box" placeholder="Friend's Name" id="friend1"><br>
+    <input type="text" class="input-box" placeholder="Friend's Name" id="friend2"><br>
+    <input type="text" class="input-box" placeholder="Friend's Name" id="friend3"><br>
+    <input type="text" class="input-box" placeholder="Friend's Name" id="friend4"><br>
+    <button class="addbutton" id="addMoreNames" onclick="addInputBox()">+ Add more names?</button>
+  </div>
+  
+  <button class="button" id="startParty" onclick="increaseProgressBar()">Get the party started</button>
+  <p class = "infoText">Don't fret! You can add more friends (or remove them) later, no sweat.</p>
+</div>
+</div>
+
+<div class = "rating-container">
+    <div class="rating-item">
+        <br>
+        <img src="https://static.elfster.com/2024.315.1250.4654/apps/vue/static/images/ssg/handshake-heart.png?562d268950c488483ce5" class="xyFsv">
+        <br>Trusted by 33 million people</div>
+    <div class="separator"></div>
+    <div class="rating-item"><br><img src="https://static.elfster.com/2024.315.1250.4654/apps/vue/static/images/landing/stars-group.png?e6a7c111a75eb388921e" class="Y-3KJ">
+        <br>4.9 stars | 234K ratings</div>
+    <div class="separator"></div>
+    <div class="rating-item"><br><img src="https://static.elfster.com/2024.315.1250.4654/apps/vue/static/images/ssg/trophy.png?c40d5efc6fefa650d74c" class="cVFu6">
+        <br>#1 Secret Santa Generator</div>
+</div>
+
+<div class = "socials-container">
+    <div class="nav"></div>
+    <div class = "title-bar">elfster</div>
+    <div class="social-links">
+        <div>About</div>
+        <div>Advertise with Us</div>
+        <div>Help</div>
+        <div>Tell a Friend</div>
+    </div>
+</div>
+<div class = "links">
+    <div class = "link-box1"></div>
+    <div>Follow on social</div>
+    <div class="V4wzR"><a href="https://www.instagram.com/elfster" title="Elfster on Instagram" target="_blank" rel="nofollow noopener" class="xfoU6 SpP-T"><span class="KITxh BBbmF"><span class="cZPW1"> Instagram </span></span></a><a href="https://www.twitter.com/elfster" title="Elfster on Twitter" target="_blank" rel="nofollow noopener" class="xfoU6 SpP-T"><span class="KITxh Po7tI"><span class="cZPW1"> Twitter </span></span></a><a href="https://www.facebook.com/elfster" title="Elfster on Facebook" target="_blank" rel="nofollow noopener" class="xfoU6 SpP-T"><span class="KITxh yMwVF"><span class="cZPW1"> Facebook </span></span></a><a href="https://www.pinterest.com/elfster" title="Elfster on Pinterest" target="_blank" rel="nofollow noopener" class="xfoU6 SpP-T"><span class="KITxh jkYPM"><span class="cZPW1"> Pinterest </span></span></a><a href="https://www.youtube.com/channel/UCEo6B92h4X1YSUJMdQeLUTA" title="Elfster on YouTube" target="_blank" rel="nofollow noopener" class="xfoU6 SpP-T"><span class="KITxh hSmta"><span class="cZPW1"> YouTube </span></span></a></div></div>
+   
+
+
+<script src="script.js"></script>
+</body>
+</html>
